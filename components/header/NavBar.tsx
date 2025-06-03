@@ -14,7 +14,7 @@ export default function NavBar() {
 	return (
 		<div className="w-full flex py-[16px] gap-[12px] border-y border-neutral-600">
 			{navItems.map(({ href, label }) => (
-				<Link key={href} href={href} className={`${pathname === href ? "text-black font-bold dark:text-white" : "text-[#d9d9d9]"} transition-colors`}>
+				<Link key={href} href={href} className={`${pathname === href ? "text-black font-bold dark:text-white" : "text-[#757575]"} transition-colors`}>
 					{label}
 				</Link>
 			))}
