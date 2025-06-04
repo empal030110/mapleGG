@@ -1,9 +1,9 @@
 interface SearchPageProps {
-    searchParams: { name?: string };
+    searchParams: Promise<{ name?: string }>;
 }
 
-export default function SearchPage({ searchParams }: SearchPageProps) {
-    const name = searchParams.name;
+export default async function SearchPage({ searchParams }: SearchPageProps) {
+    const { name } = await searchParams;
 
     return (
         <div>
